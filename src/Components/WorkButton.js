@@ -4,7 +4,7 @@ class WorkButton extends Component {
   render() {
     return (
       <a href="#work" className="animated-button bottom-slider">
-        Discover my work
+        Discover my projects
       </a>
     );
   }

@@ -658,6 +658,7 @@ a.animated-button.bottom-slider:hover {
 .home-featured-item-content {
   position: relative;
   margin-bottom: 50px;
+  flex: 0 0 41.67%;
 }
 
 .home-featured-item-thumbnail {

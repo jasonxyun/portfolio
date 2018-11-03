@@ -3,6 +3,7 @@ import "./home.css";
 import EmailButton from "../Components/EmailButton";
 import WorkButton from "../Components/WorkButton";
 import Footer from "../Components/Footer";
+import Particles from "../Components/Particles";
 
 class Home extends Component {
   render() {
@@ -71,7 +72,7 @@ class Home extends Component {
               <div className="home-featured-item-content col-5 l-right flex vertical">
                 <div className="home-featured-item-info">
                   <h2 className="home-feature-item-title">
-                    <a href="/work/uber">Uber Redesign</a>
+                    <a href="/projects/uber">Uber Redesign</a>
                   </h2>
                   <h4 className="home-featured-item-caption">
                     Discovery, In Motion.
@@ -88,7 +89,7 @@ class Home extends Component {
                       ride experience.
                     </p>
                     <a
-                      href="/work/uber"
+                      href="/projects/uber"
                       className="button-text home-feature-item-link"
                     >
                       Read Case Study
@@ -96,7 +97,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <a href="/work/uber" className="home-featured-item-thumbnail">
+              <a href="/projects/uber" className="home-featured-item-thumbnail">
                 <img
                   alt="Uber Redesign"
                   className="fit-width"
@@ -105,49 +106,11 @@ class Home extends Component {
               </a>
             </div>
 
-            <div className="home-featured-item home-featured-flickr flex">
-              <div className="home-featured-item-content clearfix col-5 l-right flex vertical">
+            <div className="home-featured-item home-featured-flux flex">
+              <div className="home-featured-item-content clearfix l-right flex vertical">
                 <div className="home-featured-item-info column">
                   <h2 className="home-feature-item-title">
-                    <a href="/work/flickr">Flickr Design System</a>
-                  </h2>
-                  <h4 className="home-featured-item-caption">
-                    By designers, for designers.
-                  </h4>
-                  <div className="home-featured-item-metadata clearfix">
-                    <div className="home-featured-item-metadata-category">
-                      Product Design, Visual Design
-                    </div>
-                  </div>
-                  <div className="home-featured-item-description col-10">
-                    <p>
-                      I believe Flickr has what it takes to slingshot back into
-                      recognition as a creative space for photographers,
-                      designers, and everyday users.
-                    </p>
-                    <a
-                      href="/work/flickr"
-                      className="button-text home-feature-item-link"
-                    >
-                      Read Case Study
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <a href="/work/flickr" className="home-featured-item-thumbnail">
-                <img
-                  alt="Uber Redesign"
-                  className="fit-width"
-                  src={require("../assets/img/shots/Flickr/flickr_home.png")}
-                />
-              </a>
-            </div>
-
-            <div className="home-featured-item home-featured-flickr flex">
-              <div className="home-featured-item-content clearfix col-5 l-right flex vertical">
-                <div className="home-featured-item-info column">
-                  <h2 className="home-feature-item-title">
-                    <a href="/work/flux">Flux</a>
+                    <a href="/projects/flux">Flux</a>
                   </h2>
                   <h4 className="home-featured-item-caption">
                     Continous change, or movement.
@@ -164,7 +127,7 @@ class Home extends Component {
                       operations.
                     </p>
                     <a
-                      href="/work/flux"
+                      href="/projects/flux"
                       className="button-text home-feature-item-link"
                     >
                       Read Case Study
@@ -172,11 +135,52 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <a href="/work/flux" className="home-featured-item-thumbnail">
+
+              <a
+                href="/projects/flux"
+                className="home-featured-item-thumbnail fit-width"
+              >
+                <Particles />
+              </a>
+            </div>
+
+            <div className="home-featured-item home-featured-flickr flex">
+              <div className="home-featured-item-content clearfix col-5 l-right flex vertical">
+                <div className="home-featured-item-info column">
+                  <h2 className="home-feature-item-title">
+                    <a href="/projects/flickr">Flickr Design System</a>
+                  </h2>
+                  <h4 className="home-featured-item-caption">
+                    By designers, for designers.
+                  </h4>
+                  <div className="home-featured-item-metadata clearfix">
+                    <div className="home-featured-item-metadata-category">
+                      Product Design, Visual Design
+                    </div>
+                  </div>
+                  <div className="home-featured-item-description col-10">
+                    <p>
+                      I believe Flickr has what it takes to slingshot back into
+                      recognition as a creative space for photographers,
+                      designers, and everyday users.
+                    </p>
+                    <a
+                      href="/projects/flickr"
+                      className="button-text home-feature-item-link"
+                    >
+                      Read Case Study
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="/projects/flickr"
+                className="home-featured-item-thumbnail"
+              >
                 <img
-                  alt="Uber Redesign"
+                  alt="Flickr Design System"
                   className="fit-width"
-                  src={require("../assets/img/shots/Uber/uber_home.png")}
+                  src={require("../assets/img/shots/Flickr/flickr_home.png")}
                 />
               </a>
             </div>

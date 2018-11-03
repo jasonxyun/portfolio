@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class Project extends Component {
+class Uber extends Component {
   render() {
     return <h1>Uber</h1>;
   }
 }
 
-export default Project;
+export default Uber;
