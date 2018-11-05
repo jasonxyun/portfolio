@@ -1,20 +1,36 @@
 import React, { Component } from "react";
 import "./App.css";
-//import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
+import classnames from "classnames";
 import Route from "./routes";
 //import { Link } from "react-router-dom";
 import Topbar from "./Components/Topbar";
-//import Footer from "./Components/Footer";
+import Dock from "./Components/Dock";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navActive: false
+    };
+    this.toggleNavigation = this.toggleNavigation.bind(this);
+  }
+
+  toggleNavigation() {
+    this.setState({ navActive: !this.state.navActive });
+    console.log(this.state.navActive);
+  }
+
   render() {
     return (
-      <div>
-        <Topbar toggleWorkNavActive={this.toggleWorkNavActive} />
+      <div className={`${this.state.navActive ? "work-nav-active" : null}`}>
+        {/* <Topbar toggleWorkNavActive={this.toggleWorkNavActive} /> */}
+        <Dock
+          toggleNavigation={this.toggleNavigation}
+          isVisible={this.state.navActive}
+        />
         <div className="content">
           <Route />
         </div>
-        {/* <Footer /> */}
       </div>
     );
   }

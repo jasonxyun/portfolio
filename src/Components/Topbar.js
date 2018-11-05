@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-//import "./Topbar.css";
 
 class Tobar extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
   render() {
     return (
       <div className="topbar clearfix">

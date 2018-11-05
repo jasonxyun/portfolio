@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Scroll from "react-scroll";
 import "./home.css";
 import EmailButton from "../Components/EmailButton";
 import WorkButton from "../Components/WorkButton";
 import Footer from "../Components/Footer";
 import Particles from "../Components/Particles";
+var Element = Scroll.Element;
 
 class Home extends Component {
   render() {
@@ -24,15 +26,22 @@ class Home extends Component {
               <li>
                 <EmailButton>
                   <div
-                    className="button"
-                    title="Click to copy email to clipboard"
+                    className="button home-email-button"
+                    title="Click to copy email to clipboard."
                   >
-                    Reach Out
+                    Contact Me
                   </div>
                 </EmailButton>
               </li>
               <li>
-                <WorkButton />
+                <WorkButton elementName={"featuredProjects"}>
+                  <div
+                    className="button home-work-button"
+                    title="Click to view my projects."
+                  >
+                    Discover my projects
+                  </div>
+                </WorkButton>
               </li>
             </div>
           </div>
@@ -42,15 +51,10 @@ class Home extends Component {
               className="home-header-cover-circles"
               src={require("../assets/img/thumbnails/circles.png")}
             />
-            {/* <img
-              alt="Korean Map"
-              className="fit-width"
-              src={require("../assets/img/thumbnails/banner3.jpg")}
-            /> */}
             <div className="scroller home-header-cover-scroller" />
           </div>
           <div className="home-header-about clearfix">
-            <p className="home-header-about-paragraph">
+            {/* <p className="home-header-about-paragraph">
               <strong>
                 I am a product designer and student based in Berkeley, CA.
               </strong>{" "}
@@ -63,10 +67,12 @@ class Home extends Component {
               </strong>
               I hope to apply this mentality as I am constantly looking to learn
               and develop insights through a personal lens.
-            </p>
+            </p> */}
           </div>
         </div>
-        <div className="home-work">
+
+        <div className="home- ">
+          <Element name="featuredProjects" />
           <div className="home-featured container">
             <div className="home-featured-item home-featured-uber flex">
               <div className="home-featured-item-content col-5 l-right flex vertical">
@@ -101,7 +107,7 @@ class Home extends Component {
                 <img
                   alt="Uber Redesign"
                   className="fit-width"
-                  src={require("../assets/img/shots/Uber/Banner 2.png")}
+                  src={require("../assets/img/shots/Uber/uber_home.png")}
                 />
               </a>
             </div>

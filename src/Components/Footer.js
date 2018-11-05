@@ -12,24 +12,24 @@ class Footer extends Component {
           </h2>
           <div className="col-7 footer-description">
             <p className="light s-bottom">
-              As a product designer and senior studying Cognitive Science at UC
-              Berkeley, I find pride in pursuing work that matter to people. I
-              apply this mentality as I'm constantly looking to learn and
-              develop new insights through a personal lens.
+              As an aspiring product designer and senior studying Cognitive
+              Science at UC Berkeley, I find pride in pursuing work that matter
+              to people. I apply this mentality as I look to learn and develop
+              insights through a personal lens.
             </p>
             <p className="light s-bottom">
               I currently focus on designing and developing smart POS
               applications with a small group of developers at my school's
               College of Environmental Design, all of whom I consider to be
-              family. I've previously worked at companies like Drop and
+              family. Previously, I've worked at companies like Drop and
               Salesforce, designing creative solutions to their complex
               problems. While my path to becoming a designer has not been
               exactly straightforward, the user experience is constantly
               dynamic, and I hope to reflect this very nature.
             </p>
             <p className="light">
-              If you'd like to talk, drop me a line! I'm happy to talk about
-              design, development, and all things photography!
+              If you'd like to talk, drop me a line! I'm happy to talk about all
+              things design, development, and photography!
             </p>
           </div>
           <div className="flex tab-title mobile-full full xl-bottom wrap">
