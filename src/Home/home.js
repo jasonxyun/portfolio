@@ -12,16 +12,15 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="home-header">
-          <div className="home-header-content container">
-            <h1 className="home-header-hero">Jason Yun</h1>
-            <h3 className="home-header-caption">
-              Product Designer -<br />
-              experienced with <br />
-              UI & UX Design
-              {/* I research <strong>today's</strong> <br />
-              design principles to set <br /> <strong>tomorrow's </strong>
-              standards. */}
-            </h3>
+          <div className="home-header-content">
+            <div className="home-header-name">
+              Jason Yun - <br /> Product Designer
+            </div>
+            <div className="home-header-description">
+              I enjoy researching <strong>today's</strong> design principles to
+              set <strong>tomorrow's </strong>
+              standards.
+            </div>
             <div className="intro-button">
               <li>
                 <EmailButton>
@@ -45,16 +44,17 @@ class Home extends Component {
               </li>
             </div>
           </div>
-          <div className="home-header-cover">
-            <img
-              alt="Designed by Jason"
-              className="home-header-cover-circles"
-              src={require("../assets/img/thumbnails/circles.png")}
-            />
-            <div className="scroller home-header-cover-scroller" />
-          </div>
-          <div className="home-header-about clearfix">
-            {/* <p className="home-header-about-paragraph">
+
+          <div className="home-header-hero-cover">
+            <WorkButton elementName={"hero-banner"}>
+              <div className="home-header-arrow-wrap">
+                <div className="home-header-arrow">
+                  <span />
+                </div>
+              </div>
+            </WorkButton>
+            <div className="home-header-hero clearfix">
+              {/* <p className="home-header-about-paragraph">
               <strong>
                 I am a product designer and student based in Berkeley, CA.
               </strong>{" "}
@@ -68,10 +68,25 @@ class Home extends Component {
               I hope to apply this mentality as I am constantly looking to learn
               and develop insights through a personal lens.
             </p> */}
+
+              <img
+                alt="home-hero"
+                className="fit-width"
+                src={require("../assets/img/thumbnails/home-cover.jpg")}
+              />
+            </div>
+            <Element name="hero-banner" />
+            <div className="home-header-about">
+              <p className="home-header-about-paragraph">
+                Welcome! <br /> I am a product designer and Cal student based in
+                Berkeley, CA. I specialize in creating intuitive designs that
+                aim to make technology both accessible and easier to use.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="home- ">
+        <div className="home">
           <Element name="featuredProjects" />
           <div className="home-featured container">
             <div className="home-featured-item home-featured-uber flex">

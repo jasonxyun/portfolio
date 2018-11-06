@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+// import EmailButton from "./EmailButton";
+// import WorkButton from "./WorkButton";
 
 class Footer extends Component {
   render() {
     return (
       <div className="footer">
         <div className="footer-content container">
-          <h2 className="col-7 l-bottom tab-title mobile-full">
+          <h2 className="col-7 m-bottom tab-title mobile-full">
             Hello –&nbsp;
             <br />
             I’m Jason Yun
@@ -32,7 +34,7 @@ class Footer extends Component {
               things design, development, and photography!
             </p>
           </div>
-          <div className="flex tab-title mobile-full full xl-bottom wrap">
+          <div className="flex tab-title mobile-full full m-bottom wrap">
             <div className="col-4 tab-full">
               <h5 className="xs-top xs-bottom">Work Experience</h5>
               <p className="bold">UC Berkeley CED</p>
@@ -63,6 +65,32 @@ class Footer extends Component {
               <h5 className="col-2 xs-top xs-bottom">Contact</h5>
               <p className="light xs-bottom">jasonyun@berkeley.edu</p>
             </div>
+          </div>
+          <div className=" clearfix original-blue">
+            <a
+              href="https://www.linkedin.com/in/jasonjyun/"
+              className="nav-social-links-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/jasonxyun"
+              className="nav-social-links-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.instagram.com/jasonxyun/"
+              className="nav-social-links-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
           </div>
         </div>
       </div>
