@@ -3,14 +3,14 @@ import React, { Component } from "react";
 class About extends Component {
   render() {
     return (
-      <div className="footer">
-        <div className="footer-content container">
+      <div className="about">
+        <div className="about-content container">
           <h2 className="col-7 l-bottom tab-title mobile-full">
             Hello –&nbsp;
             <br />
             I’m Jason Yun
           </h2>
-          <div className="col-7 footer-description">
+          <div className="col-7 about-description">
             <p className="light s-bottom">
               As a product designer and senior studying Cognitive Science at UC
               Berkeley, I find pride in pursuing work that matter to people. I
@@ -38,7 +38,7 @@ class About extends Component {
               <p className="bold">UC Berkeley CED</p>
               <p className="light s-bottom">
                 UI Developer{" "}
-                <span className="footer-timeline gray">
+                <span className="about-timeline gray">
                   &sdot; Nov 2016 - Present
                 </span>
               </p>
@@ -46,13 +46,13 @@ class About extends Component {
               <p className="bold">Salesforce</p>
               <p className="light s-bottom">
                 UX Design Intern{" "}
-                <span className="footer-timeline gray">&sdot; Summer 2017</span>
+                <span className="about-timeline gray">&sdot; Summer 2017</span>
               </p>
 
               <p className="bold">Drop.ai</p>
               <p className="light s-bottom">
                 Product Designer, Co-Founder{" "}
-                <span className="footer-timeline gray">&sdot; Summer 2016</span>
+                <span className="about-timeline gray">&sdot; Summer 2016</span>
               </p>
             </div>
             <div className="col-4 tab-full">

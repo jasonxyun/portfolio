@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Dock from "react-dock";
-import classnames from "classnames";
-import EmailButton from "./EmailButton";
+// import classnames from "classnames";
+// import EmailButton from "./EmailButton";
 
 class Navigation extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class Navigation extends Component {
           defaultSize={1.0}
           fluid={true}
           isVisible={this.props.isVisible}
-          zIndex="10"
+          zIndex={10}
         >
           {/*
           <div className="nav-social-links clearfix original-blue">
@@ -114,26 +114,27 @@ class Navigation extends Component {
                     </a>
                   </div>
                   <div className="work-nav-header">Learn More</div>
-                  <div class="work-nav-item-container">
-                    <a href="/about" class="work-nav-item">
+                  <div className="work-nav-item-container">
+                    <a href="/about" className="work-nav-item">
                       About
                     </a>
                     <a
                       href="https://medium.com/@rokaiam"
                       target="_blank"
-                      class="work-nav-item"
+                      className="work-nav-item"
+                      rel="noopener noreferrer"
                     >
                       Blog
                     </a>
-                    <div class="work-nav-item">
+                    <div className="work-nav-item">
                       <button
                         type="button"
-                        class="clipboard-button"
+                        className="clipboard-button"
                         data-clipboard-text="roka371@gmail.com"
                       >
-                        <div class="work-nav-item-email">Get in Touch</div>
-                        <div class="clipboard-caption transition-whoosh null">
-                          My email has been copied to your clipboard! 🎉
+                        <div className="work-nav-item-email">Get in Touch</div>
+                        <div className="clipboard-caption transition-whoosh null">
+                          My email has been copied to your clipboard!
                         </div>
                       </button>
                     </div>

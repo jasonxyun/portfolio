@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import classnames from "classnames";
 import Clipboard from "react-clipboard.js";
+import PropTypes from "prop-types";
 
 class EmailButton extends Component {
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  };
+
   constructor(props) {
     super(props);
     this.state = {
       clipboardCaption: false
     };
+
     this.onSuccess = this.onSuccess.bind(this);
     this.showClipboardCaption = this.showClipboardCaption.bind(this);
     this.hideClipboardCaption = this.hideClipboardCaption.bind(this);
@@ -41,17 +47,19 @@ class EmailButton extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <Clipboard
-          className="clipboard-button"
-          data-clipboard-text="jasonyun@berkeley.edu"
-          onSuccess={this.onSuccess}
-        >
+      <Clipboard
+        className={classnames("clipboard-button")}
+        data-clipboard-text="jasonyun@berkeley.edu"
+        onSuccess={this.onSuccess}
+      >
+        <div>
           {this.props.children}
           <div
             className={classnames(
+              this.props.color,
               "clipboard-caption",
               "transition-whoosh",
+
               `${
                 this.state.clipboardCaption ? "clipboard-caption-active" : null
               }`
@@ -59,8 +67,8 @@ class EmailButton extends Component {
           >
             My email has been copied to your clipboard!
           </div>
-        </Clipboard>
-      </React.Fragment>
+        </div>
+      </Clipboard>
     );
   }
 }

@@ -12,23 +12,23 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="home-header">
-          <div className="home-header-content">
+          <div className="home-header-intro">
             <div className="home-header-name">
               Jason Yun - <br /> Product Designer
             </div>
             <div className="home-header-description">
-              I enjoy researching <strong>today's</strong> design principles to
-              set <strong>tomorrow's </strong>
+              I study <strong>today's</strong> design principles to set{" "}
+              <strong>tomorrow's </strong>
               standards.
             </div>
-            <div className="intro-button">
+            <div className="home-header-button">
               <li>
                 <EmailButton>
                   <div
                     className="button home-email-button"
                     title="Click to copy email to clipboard."
                   >
-                    Contact Me
+                    Get in touch
                   </div>
                 </EmailButton>
               </li>
@@ -38,7 +38,7 @@ class Home extends Component {
                     className="button home-work-button"
                     title="Click to view my projects."
                   >
-                    Discover my projects
+                    Explore my projects
                   </div>
                 </WorkButton>
               </li>
@@ -46,7 +46,7 @@ class Home extends Component {
           </div>
 
           <div className="home-header-hero-cover">
-            <WorkButton elementName={"hero-banner"}>
+            <WorkButton elementName={"home-header-welcome"}>
               <div className="home-header-arrow-wrap">
                 <div className="home-header-arrow">
                   <span />
@@ -54,43 +54,42 @@ class Home extends Component {
               </div>
             </WorkButton>
             <div className="home-header-hero clearfix">
-              {/* <p className="home-header-about-paragraph">
-              <strong>
-                I am a product designer and student based in Berkeley, CA.
-              </strong>{" "}
-              My passions lie within creating efficient and intuitive designs
-              that aim to make technology acceessible and easier to use.
-            </p>
-            <p className="home-header-about-paragraph">
-              <strong>
-                I find pride in pursuing projects that matter to people.{" "}
-              </strong>
-              I hope to apply this mentality as I am constantly looking to learn
-              and develop insights through a personal lens.
-            </p> */}
-
               <img
                 alt="home-hero"
                 className="fit-width"
                 src={require("../assets/img/thumbnails/home-cover.jpg")}
               />
             </div>
-            <Element name="hero-banner" />
-            <div className="home-header-about">
-              <p className="home-header-about-paragraph">
-                Welcome! <br /> I am a product designer and Cal student based in
-                Berkeley, CA. I specialize in creating intuitive designs that
-                aim to make technology both accessible and easier to use.
-              </p>
+            <Element name="home-header-welcome" />
+          </div>
+
+          <div className="home-header-welcome">
+            <div className="home-section-title">
+              <div className="home-section-title-wrap">
+                <span className="home-section-title-label">Welcome</span>
+              </div>
             </div>
+            <p>Hey There!</p>
+            <p>
+              I'm a product designer and a senior at Cal studying Cognitive
+              Science. I specialize in creating intuitive designs with the goal
+              of making technology both accessible and easier to use.
+            </p>
+            <a href="/about">Learn More</a>
           </div>
         </div>
 
-        <div className="home">
-          <Element name="featuredProjects" />
-          <div className="home-featured container">
+        <div className="home-content">
+          <div className="home-featured">
+            <Element name="featuredProjects" />
+            <div className="home-featured-title">Design Projects</div>
+            {/* <div className="home-section-title">
+              <div className="home-section-title-wrap">
+                <span className="home-section-title-label">Projects</span>
+              </div>
+            </div> */}
             <div className="home-featured-item home-featured-uber flex">
-              <div className="home-featured-item-content col-5 l-right flex vertical">
+              <div className="home-featured-item-content col-5 flex vertical">
                 <div className="home-featured-item-info">
                   <h2 className="home-feature-item-title">
                     <a href="/projects/uber">Uber Redesign</a>
@@ -118,6 +117,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
+
               <a href="/projects/uber" className="home-featured-item-thumbnail">
                 <img
                   alt="Uber Redesign"
@@ -128,7 +128,7 @@ class Home extends Component {
             </div>
 
             <div className="home-featured-item home-featured-flux flex">
-              <div className="home-featured-item-content clearfix l-right flex vertical">
+              <div className="home-featured-item-content clearfix flex vertical">
                 <div className="home-featured-item-info column">
                   <h2 className="home-feature-item-title">
                     <a href="/projects/flux">Flux</a>
@@ -166,7 +166,7 @@ class Home extends Component {
             </div>
 
             <div className="home-featured-item home-featured-flickr flex">
-              <div className="home-featured-item-content clearfix col-5 l-right flex vertical">
+              <div className="home-featured-item-content clearfix col-5 flex vertical">
                 <div className="home-featured-item-info column">
                   <h2 className="home-feature-item-title">
                     <a href="/projects/flickr">Flickr Design System</a>
@@ -207,6 +207,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     );
