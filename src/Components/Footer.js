@@ -66,7 +66,7 @@ class Footer extends Component {
                 <Icon icon={instagram} />
               </a>
               <a
-                href="https://www.instagram.com/jasonxyun/"
+                href="https://github.com/jasonxyun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-social-icon"
