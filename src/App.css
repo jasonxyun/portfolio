@@ -194,7 +194,7 @@ h1 {
 
 h2 {
   font-size: 3em;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 
 h3 {
@@ -673,16 +673,17 @@ p:last-child {
   padding-left: 140px;
 }
 
-.home-header-welcome {
+.home-welcome {
   background: #f0f0f0;
   position: relative;
-  padding: 200px 0 200px 140px;
+  padding: 200px 0px 200px 140px;
   overflow: auto;
+  display: block;
 }
 
-.home-header-welcome p {
+.home-welcome p {
   max-width: 1075px;
-  float: left;
+
   opacity: 1;
   color: black;
   font-weight: 300;
@@ -692,20 +693,24 @@ p:last-child {
   padding: 0 100px 0 100px;
 }
 
-.home-header-welcome p:first-of-type {
+.home-welcome p:first-of-type {
   margin-bottom: 10px;
 }
 
-.home-header-welcome a {
+.home-welcome a {
   font-size: 20px;
   font-weight: 300;
   float: left;
   margin: 50px 100px 0 100px;
 }
 
-.home-header-welcome a:hover {
+.home-welcome a:hover {
   color: #368ef5;
   transition: 0.25s ease-in-out;
+}
+
+.home-welcome-content {
+  display: block;
 }
 
 .home-section-title {
@@ -740,18 +745,84 @@ p:last-child {
 
 .home-featured {
   padding: 0px 0px 100px 140px;
-  background: #f0f0f0;
   position: relative;
+  background: #f0f0f0;
 }
 
 .home-featured-title {
   font-family: Maitree;
   font-size: 3em;
   padding-top: 50px;
+  padding-bottom: 30px;
+  background: #f0f0f0;
 }
 
-.home-featured-item {
-  padding-bottom: 100px;
+.home-project-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-project-item {
+  -webkit-box-flex: 1;
+  flex: 1;
+  max-width: 33%;
+  min-width: 33%;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.home-project-image-wrap {
+  overflow: hidden;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.home-project-link img {
+  transition: 0.3s ease-in-out;
+}
+
+.home-project-link:hover img {
+  transition: 0.5s ease-in-out;
+  transform: translateZ(0) scale(1.06);
+}
+
+.home-project-title {
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 27px;
+  letter-spacing: -0.22px;
+  padding-right: 40px;
+  padding-bottom: 8px;
+}
+
+.home-project-category {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  padding-right: 40px;
+  padding-bottom: 11px;
+  position: relative;
+  color: #368ef5;
+}
+
+.home-project-description {
+  position: relative;
+  float: left;
+  display: block;
+  font-size: 1em;
+  line-height: 30px;
+  letter-spacing: 0px;
+  opacity: 0.5;
+  padding-right: 40px;
+}
+
+/* .home-featured-item {
+  position: relative;
+  margin-bottom: 50px;
+  z-index: 1;
 }
 
 .home-featured-item:last-child {
@@ -759,8 +830,9 @@ p:last-child {
 }
 
 .home-featured-item-content {
-  position: relative;
-  flex: 0 0 41.67%;
+  background: lightgrey;
+  color: white;
+  padding: 40px 50px 40px 50px;
 }
 
 .home-feature-item-title {
@@ -768,45 +840,32 @@ p:last-child {
 }
 
 .home-featured-item-caption {
-  margin-bottom: 16px;
-  color: #368ef5;
+  margin-bottom: 10px;
   opacity: 0.9;
 }
 
-.home-featured-item-metadata {
+.home-featured-item-category {
   color: rgba(1, 17, 24, 0.5);
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .home-featured-item-description {
-  bottom: 0px;
   position: relative;
+  bottom: 0px;
   right: 0px;
 }
 
 .home-featured-item-description p {
   margin: 0px;
   margin-bottom: 16px;
-  opacity: 0.5;
 }
 
 .home-featured-item-thumbnail {
   cursor: pointer;
+  background: white;
   position: relative;
 }
-
-/* .home-featured-item-thumbnail:hover {
-  -webkit-transform: scale(0.99);
-  transform: scale(0.99);
-  transition: ease-in-out 0.5s;
-}
-
-.home-featured-item-thumbnail:not(:hover) {
-  transform: scale(1);
-  transition: ease-in-out 0.5s;
-} */
-
 a.home-feature-item-link {
   margin-top: 30px;
   transition: ease 0.2s;
@@ -815,6 +874,17 @@ a.home-feature-item-link {
 a.home-feature-item-link:hover {
   color: #368ef5;
   transition: ease-in-out 0.3s;
+} */
+
+.home-featured-background {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  top: 250px;
+  left: 0;
+  display: block;
+  bottom: 0;
+  background: white;
 }
 
 /* ABOUT */
