@@ -12,7 +12,7 @@ class WorkButton extends Component {
       duration: 1000,
       delay: 100,
       smooth: true,
-      offset: 0 // Scrolls to element + 50 pixels down the page
+      offset: this.props.offset // Scrolls to element + 50 pixels down the page
     });
   }
   render() {

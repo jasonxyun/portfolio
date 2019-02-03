@@ -48,7 +48,7 @@ class EmailButton extends Component {
   render() {
     return (
       <Clipboard
-        className={classnames("clipboard-button")}
+        className={classnames("clipboard-button", this.props.buttonClass)}
         data-clipboard-text="jasonyun@berkeley.edu"
         onSuccess={this.onSuccess}
       >
@@ -59,7 +59,6 @@ class EmailButton extends Component {
               this.props.color,
               "clipboard-caption",
               "transition-whoosh",
-
               `${
                 this.state.clipboardCaption ? "clipboard-caption-active" : null
               }`

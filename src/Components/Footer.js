@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import EmailButton from "./EmailButton";
+import { Link } from "react-router-dom";
 import Icon from "react-icons-kit";
 import { linkedin } from "react-icons-kit/entypo/linkedin";
 import { instagram } from "react-icons-kit/entypo/instagram";
@@ -36,14 +37,26 @@ class Footer extends Component {
               photography!
             </p>
             <p>For the meantime, check out some of my other pages!</p>
-            <EmailButton color={"white"}>
-              <div
-                className="button footer-email-button"
-                title="Click to copy email to clipboard."
-              >
-                Get in touch
-              </div>
-            </EmailButton>
+            <li>
+              <EmailButton color={"white"}>
+                <div
+                  className="button footer-email-button"
+                  title="Click to copy email to clipboard."
+                >
+                  Get in touch
+                </div>
+              </EmailButton>
+            </li>
+            <li>
+              <Link to="/about">
+                <div
+                  className="button white footer-about-button"
+                  title="Click to view my projects."
+                >
+                  About Me
+                </div>
+              </Link>
+            </li>
           </div>
 
           <div className="footer-bottom">

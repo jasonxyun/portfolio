@@ -5,18 +5,19 @@ import About from "./About/about";
 import Uber from "./Projects/uber";
 import Flickr from "./Projects/flickr";
 import Flux from "./Projects/flux";
-//import Topbar from "./Components/Topbar";
-//import Projects from "./Projects/projects";
+import NavBar from "./Components/Navbar";
 
 const routes = () => (
-  <Switch>
+  <div>
+    <NavBar />
+    {/* <Switch> */}
     <Route exact path="/" component={Home} />
-    {/* <Route path="/projects" component={Projects} /> */}
-    <Route path="/projects/uber" component={Uber} />
-    <Route path="/projects/flickr" component={Flickr} />
-    <Route path="/projects/flux" component={Flux} />
+    <Route path="/uber" component={Uber} />
+    <Route path="/flickr" component={Flickr} />
+    <Route path="/flux" component={Flux} />
     <Route path="/about" component={About} />
-  </Switch>
+    {/* </Switch> */}
+  </div>
 );
 
 export default routes;
