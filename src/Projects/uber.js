@@ -5,6 +5,7 @@ import Scroll from "react-scroll";
 import EmailButton from "../Components/EmailButton";
 import Particles from "../Components/Particles";
 import WorkButton from "../Components/WorkButton";
+import Fade from "react-reveal/Fade";
 var Element = Scroll.Element;
 
 class Uber extends Component {
@@ -69,7 +70,7 @@ class Uber extends Component {
       fontName: "inherit"
     };
     return (
-      <div>
+      <div class="project">
         <ul className="pagination" style={{ display: "unset" }}>
           <li className="pagination-visible">
             <WorkButton elementName={"one"}>
@@ -120,9 +121,12 @@ class Uber extends Component {
 
         <div className="project-title vertical">
           <div className="col-6 xm-top mobile-xm-top adjust-title-width">
-            <h2 className="xm-bottom adjust-left">
-              Uber - <br /> <span className="light">Discovery in motion.</span>
-            </h2>
+            <Fade left>
+              <h2 className="xm-bottom adjust-left">
+                Uber –&nbsp; <br />{" "}
+                <span className="light">Discovery in motion.</span>
+              </h2>
+            </Fade>
           </div>
         </div>
 
@@ -165,7 +169,10 @@ class Uber extends Component {
               </div>
               <div className="col-3 half-tab-width s-bottom">
                 <h5>Mission</h5>
-                <p className="light">Feature Design Integration</p>
+                <p className="light">
+                  Propose a new feature design integration using data-driven
+                  methods
+                </p>
               </div>
             </div>
             <div className="project-overview center white">
@@ -804,9 +811,7 @@ class Uber extends Component {
               <div className="bottom-width-left xl-right tab-centered">
                 <h3 className="white regular super-top">Let's get in touch</h3>
                 <p className="white light l-top s-bottom">
-                  I am always available to chat! I am currently looking for a
-                  full-time product designer positions in the San Francisco Bay
-                  Area.
+                  Tea or Coffee? I'm up for either!
                 </p>
                 <EmailButton
                   color={"white"}
@@ -824,7 +829,7 @@ class Uber extends Component {
             <div className="project-fake-white half flex">
               <div className="bottom-width-right xl-left">
                 <h3 className="regular super-top">Next project</h3>
-                <div className="flex m-top super-bottom">
+                <div className="flex m-top xl-bottom">
                   <div className="flux-green col-6 flex vertical center s-pad-around particle-card-min-width">
                     <Particles width="160px" height="160px" valueArea="75" />
                   </div>

@@ -6,6 +6,8 @@ import About from "./About/about";
 import Uber from "./Projects/uber";
 import Flickr from "./Projects/flickr";
 import Flux from "./Projects/flux";
+import Gather from "./Projects/gather";
+import Salesforce from "./Projects/salesforce";
 import NavBar from "./Components/Navbar";
 import ReactGA from "react-ga";
 
@@ -25,6 +27,8 @@ class App extends Component {
           <Route path="/projects/uber" component={Uber} />
           <Route path="/projects/flickr" component={Flickr} />
           <Route path="/projects/flux" component={Flux} />
+          <Route path="/projects/gather" component={Gather} />
+          <Route path="/projects/salesforce" component={Salesforce} />
           <Route path="/about" component={About} />
         </Switch>
       </div>

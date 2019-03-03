@@ -4,13 +4,12 @@ import Scroll from "react-scroll";
 import EmailButton from "../Components/EmailButton";
 import Particles from "../Components/Particles";
 import WorkButton from "../Components/WorkButton";
-// import Footer from "../Components/Footer";
 var Element = Scroll.Element;
 
 class Flux extends Component {
   render() {
     return (
-      <div>
+      <div class="project">
         <ul className="pagination" style={{ display: "unset" }}>
           <li className="pagination-visible">
             <WorkButton elementName={"one"}>
@@ -59,7 +58,7 @@ class Flux extends Component {
         <div className="project-title vertical">
           <div className="col-6 xm-top mobile-xm-top adjust-title-width">
             <h2 className="xm-bottom adjust-left">
-              Flux: <br />{" "}
+              Flux –&nbsp; <br />{" "}
               <span className="light">
                 Continuous change, passage, or movement.
               </span>
@@ -69,7 +68,7 @@ class Flux extends Component {
 
         <div className="project-header">
           <div className="flex center vertical flux-green">
-            <Particles width="100vw" height="45vw" valueArea="175" />
+            <Particles width="100vw" height="40vw" valueArea="175" />
           </div>
           <div id="top" />
           <div className="very-dark xm-pad-bottom">
@@ -77,10 +76,11 @@ class Flux extends Component {
               <div className="col-6 xm-bottom">
                 <h5>Overview</h5>
                 <p className="light">
-                  From the start to finish of the design process, animations are
-                  primarily introduced towards the end of the project. Needless
-                  today, that does not take away from its significance. They are
-                  the a crucial chapters of an interface that determines its{" "}
+                  From the very start to the finish of the design process,
+                  animations are primarily introduced towards the end of the
+                  project. Needless to say, it does not take away from its
+                  significance. They are the a crucial chapters of an interface
+                  that determines its overall
                   <i>look</i> and <i>feel</i>. In this project, I dive into a
                   handful of the popular animations that designers utilize in
                   the industry today.
@@ -95,7 +95,7 @@ class Flux extends Component {
               <div className="col-3 half-tab-width s-bottom">
                 <h5>Mission</h5>
                 <p className="light">
-                  Study of the popular animations used in the industry
+                  Study the popular animations used in the industry
                 </p>
               </div>
             </div>
@@ -318,9 +318,7 @@ class Flux extends Component {
               <div className="bottom-width-left xl-right tab-centered">
                 <h3 className="white regular super-top">Let's get in touch</h3>
                 <p className="white light l-top s-bottom">
-                  I am always available to chat! I am currently looking for a
-                  full-time product designer positions in the San Francisco Bay
-                  Area.
+                  Tea or Coffee? I'm up for either!
                 </p>
                 <EmailButton
                   color={"white"}
@@ -338,7 +336,7 @@ class Flux extends Component {
             <div className="project-fake-white half flex">
               <div className="bottom-width-right xl-left">
                 <h3 className="regular super-top">Next project</h3>
-                <div className="flex m-top super-bottom">
+                <div className="flex m-top xl-bottom">
                   <div className="flickr-orange col-6 flex vertical center s-pad-around card-min-width">
                     <img
                       src={require("../assets/img/thumbnails/flickr_project_thumbnail.png")}

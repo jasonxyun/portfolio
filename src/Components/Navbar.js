@@ -83,7 +83,7 @@ class NavBar extends Component {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1mT5UrUolY7l0P_3Kw_mGbXeroKObQ0Vq/view?usp=sharing"
+              href="https://drive.google.com/file/d/11mQFDOUMwL7Pv7RiL19O8fgbmoy7B2Ta/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="classic-black nav-fx"
@@ -128,7 +128,7 @@ class NavBar extends Component {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1mT5UrUolY7l0P_3Kw_mGbXeroKObQ0Vq/view?usp=sharing"
+              href="https://drive.google.com/file/d/11mQFDOUMwL7Pv7RiL19O8fgbmoy7B2Ta/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="white reverse-nav-fx"
@@ -145,6 +145,8 @@ class NavBar extends Component {
         <Route exact path="/projects/uber" component={Normal} />
         <Route exact path="/projects/flickr" component={Normal} />
         <Route exact path="/projects/flux" component={Normal} />
+        <Route exact path="/projects/gather" component={Normal} />
+        <Route exact path="/projects/salesforce" component={Normal} />
         <Route exact path="/about" component={About} />
       </div>
     );

@@ -30,13 +30,10 @@ class Footer extends Component {
           <div className="footer-about">
             <h3>I'm glad you're here.</h3>
             <p>
-              Got a question in mind? While I try to make this website the best
-              representation of myself, there is only so much I can put on here.
-              If you'd like to learn more about me personally, please drop me a
-              line. I'm happy to talk about all things design, development, and
-              photography!
+              Got a question in mind? If you'd like to learn more about me
+              personally, please drop me a line. I'm happy to talk about all
+              things design, development, and photography!
             </p>
-            <p>For the meantime, check out some of my other pages!</p>
             <li>
               <EmailButton color={"white"}>
                 <div

@@ -8,7 +8,7 @@ var Element = Scroll.Element;
 class Flickr extends Component {
   render() {
     return (
-      <div>
+      <div class="project">
         <ul className="pagination" style={{ display: "unset" }}>
           <li className="pagination-visible">
             <WorkButton elementName={"one"}>
@@ -71,7 +71,8 @@ class Flickr extends Component {
         <div className="project-title vertical">
           <div className="col-6 xm-top mobile-xm-top adjust-title-width">
             <h2 className="xm-bottom adjust-left">
-              Flickr - <br /> <span className="light">New and improved.</span>
+              Flickr –&nbsp; <br />{" "}
+              <span className="light">For designers, by designers.</span>
             </h2>
           </div>
         </div>
@@ -116,7 +117,9 @@ class Flickr extends Component {
               </div>
               <div className="col-3 half-tab-width s-bottom">
                 <h5>Mission</h5>
-                <p className="light">Interactive User Testing</p>
+                <p className="light">
+                  Create a new consistent look and feel for the Flickr platform
+                </p>
               </div>
             </div>
             <div className="project-overview center white">
@@ -145,7 +148,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="one" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Challenges.png")}
                 alt="Challenges"
               />
@@ -154,7 +157,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="two" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Blueprints.png")}
                 alt="Blueprints"
               />
@@ -163,7 +166,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="three" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Design Components.png")}
                 alt="Design Components"
               />
@@ -172,7 +175,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="four" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Typography.png")}
                 alt="Typography"
               />
@@ -181,7 +184,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="five" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Photography.png")}
                 alt="Photography"
               />
@@ -190,7 +193,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="six" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Color.png")}
                 alt="Color"
               />
@@ -199,7 +202,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="seven" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Implementation.png")}
                 alt="Implementation"
               />
@@ -208,7 +211,7 @@ class Flickr extends Component {
             <div className="scroll-container">
               <Element name="eight" className="scroll-element" />
               <img
-                className="fit-width image-shadow"
+                className="fit-width"
                 src={require("../assets/img/images/Flickr/exports/Closing.png")}
                 alt="Closing"
               />
@@ -216,7 +219,7 @@ class Flickr extends Component {
           </div>
         </div>
 
-        <div className="project-body xl-top">
+        <div className="project-body xl-top xl-pad-bottom">
           <h2 className="col-6 centered xm-top m-bottom">Closing thoughts</h2>
           <p className="col-6 article-font centered s-bottom">
             All in all, this entire project has been challenging in that it
@@ -235,9 +238,7 @@ class Flickr extends Component {
               <div className="bottom-width-left xl-right tab-centered">
                 <h3 className="white regular super-top">Let's get in touch</h3>
                 <p className="white light m-top s-bottom">
-                  I am always available to chat! I am currently looking for a
-                  full-time product designer positions in the San Francisco Bay
-                  Area.
+                  Tea or Coffee? I'm up for either!
                 </p>
                 <EmailButton
                   color={"white"}
@@ -255,23 +256,21 @@ class Flickr extends Component {
             <div className="project-fake-white half flex">
               <div className="bottom-width-right xl-left">
                 <h3 className="regular super-top">Next project</h3>
-                <div className="flex m-top super-bottom">
-                  <div className="uber-blue col-6 flex vertical center s-pad-around card-min-width">
+                <div className="flex m-top xl-bottom">
+                  <div className="gather-blue col-6 flex vertical center s-pad-around card-min-width">
                     <img
-                      src={require("../assets/img/thumbnails/uber_project_thumbnail.png")}
+                      src={require("../assets/img/thumbnails/gather_project_thumbnail.png")}
                       style={{ width: "100%" }}
                       alt="uber project thumbnail"
                     />
                   </div>
                   <div className="s-left bottom-left-mobile-readjust">
-                    <h3 className="xs-bottom bold ">Uber</h3>
+                    <h3 className="xs-bottom bold ">Gather</h3>
                     <p className="xs-bottom">
-                      Gone are the days of switching between apps from in-ride
-                      recreation. My Uber redesign takes form in creating an
-                      enjoyable ride experience.
+                      An app that lets you share the aux.
                     </p>
                     <Link
-                      to="/projects/uber"
+                      to="/projects/gather"
                       className="button black project-work-button project-fake-white"
                     >
                       View Project
