@@ -96,6 +96,70 @@ class Home extends Component {
           </div>
 
           <div className="home-project-wrap">
+            <div className="home-project-item project-GATHER home-project-half-width">
+              <Link to="/projects/gather" className="home-project-link">
+                <div className="home-project-image-wrap">
+                  <img
+                    alt="Gather"
+                    className="fit-width"
+                    src={require("../assets/img/thumbnails/gather_home-half.png")}
+                  />
+                  <div className="home-thumbnail-overlay">
+                    <div className="project-description">
+                      <div className="home-project-title">Gather</div>
+                      <div className="home-project-description">
+                        An app that lets you share the aux.
+                      </div>
+                      <div className="home-project-category">
+                        Product Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="home-project-info">
+                  <p className="home-project-title">Gather</p>
+                  <p className="home-project-category">Product Design</p>
+                  <p className="home-project-description ss-bottom">
+                    I believe Flickr has what it takes to slingshot back into
+                    recognition as a creative space for photographers,
+                    designers, and everyday users.
+                  </p>
+                </div> */}
+              </Link>
+            </div>
+
+            <div className="home-project-item project-SALESFORCE home-project-half-width">
+              <Link to="/projects/salesforce" className="home-project-link">
+                <div className="home-project-image-wrap">
+                  <img
+                    alt="Gather"
+                    className="fit-width"
+                    src={require("../assets/img/thumbnails/salesforce-half.png")}
+                  />
+                  <div className="home-thumbnail-overlay">
+                    <div className="project-description">
+                      <div className="home-project-title">Salesforce</div>
+                      <div className="home-project-description">
+                        Redesigning the Customer Success Suite.
+                      </div>
+                      <div className="home-project-category">UX Design</div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div class="banners-item-container">
+                  <h2
+                    data-wow="scale-up"
+                    class="banners-item-title has-animate"
+                  >
+                    <div class="banners-item-text-reveal">
+                      <span>Salesforce</span>
+                      <span>Lightning.</span>
+                    </div>
+                  </h2>
+                </div> */}
+              </Link>
+            </div>
+
             <div className="home-project-item project-UBER">
               <Link to="/projects/uber" className="home-project-link">
                 <div className="home-project-image-wrap">
@@ -108,7 +172,7 @@ class Home extends Component {
                     <div className="project-description">
                       <div className="home-project-title">Uber</div>
                       <div className="home-project-description">
-                        Creating a enjoyable ride experience.
+                        Creating an enjoyable ride experience.
                       </div>
                       <div className="home-project-category">
                         UX Design &#8226; Feature Design
@@ -192,70 +256,6 @@ class Home extends Component {
                     recognition as a creative space for photographers,
                     designers, and everyday users.
                   </p>
-                </div> */}
-              </Link>
-            </div>
-
-            <div className="home-project-item project-GATHER home-project-half-width">
-              <Link to="/projects/gather" className="home-project-link">
-                <div className="home-project-image-wrap">
-                  <img
-                    alt="Gather"
-                    className="fit-width"
-                    src={require("../assets/img/thumbnails/gather_home-half.png")}
-                  />
-                  <div className="home-thumbnail-overlay">
-                    <div className="project-description">
-                      <div className="home-project-title">Gather</div>
-                      <div className="home-project-description">
-                        An app that lets you share the aux.
-                      </div>
-                      <div className="home-project-category">
-                        Product Design
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* <div className="home-project-info">
-                  <p className="home-project-title">Gather</p>
-                  <p className="home-project-category">Product Design</p>
-                  <p className="home-project-description ss-bottom">
-                    I believe Flickr has what it takes to slingshot back into
-                    recognition as a creative space for photographers,
-                    designers, and everyday users.
-                  </p>
-                </div> */}
-              </Link>
-            </div>
-
-            <div className="home-project-item project-SALESFORCE home-project-half-width">
-              <Link to="/projects/salesforce" className="home-project-link">
-                <div className="home-project-image-wrap">
-                  <img
-                    alt="Gather"
-                    className="fit-width"
-                    src={require("../assets/img/thumbnails/salesforce-half.png")}
-                  />
-                  <div className="home-thumbnail-overlay">
-                    <div className="project-description">
-                      <div className="home-project-title">Salesforce</div>
-                      <div className="home-project-description">
-                        Redesigning the Customer Success Suite.
-                      </div>
-                      <div className="home-project-category">UX Design</div>
-                    </div>
-                  </div>
-                </div>
-                {/* <div class="banners-item-container">
-                  <h2
-                    data-wow="scale-up"
-                    class="banners-item-title has-animate"
-                  >
-                    <div class="banners-item-text-reveal">
-                      <span>Salesforce</span>
-                      <span>Lightning.</span>
-                    </div>
-                  </h2>
                 </div> */}
               </Link>
             </div>

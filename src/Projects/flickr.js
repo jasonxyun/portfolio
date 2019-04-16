@@ -20,14 +20,14 @@ class Flickr extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"two"}>
               <scrollbutton className="pagination-visible">
-                Design blueprints
+                Design Blueprints
               </scrollbutton>
             </WorkButton>
           </li>
           <li className="pagination-visible">
             <WorkButton elementName={"three"}>
               <scrollbutton className="pagination-visible">
-                Primary design components
+                Primary Design Components
               </scrollbutton>
             </WorkButton>
           </li>
@@ -48,7 +48,7 @@ class Flickr extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"six"}>
               <scrollbutton className="pagination-visible">
-                Color palette
+                Color Palette
               </scrollbutton>
             </WorkButton>
           </li>
@@ -220,7 +220,7 @@ class Flickr extends Component {
         </div>
 
         <div className="project-body xl-top xl-pad-bottom">
-          <h2 className="col-6 centered xm-top m-bottom">Closing thoughts</h2>
+          <h2 className="col-6 centered xm-top m-bottom">Closing Thoughts</h2>
           <p className="col-6 article-font centered s-bottom">
             All in all, this entire project has been challenging in that it
             required me rethink Flickr's design system and company message as a
@@ -255,25 +255,26 @@ class Flickr extends Component {
             </div>
             <div className="project-fake-white half flex">
               <div className="bottom-width-right xl-left">
-                <h3 className="regular super-top">Next project</h3>
+                <h3 className="regular super-top">You've reached the end!</h3>
                 <div className="flex m-top xl-bottom">
-                  <div className="gather-blue col-6 flex vertical center s-pad-around card-min-width">
+                  <div className="new-pink col-6 flex vertical center s-pad-around card-min-width">
                     <img
-                      src={require("../assets/img/thumbnails/gather_project_thumbnail.png")}
+                      src={require("../assets/img/thumbnails/new-project.png")}
                       style={{ width: "100%" }}
-                      alt="uber project thumbnail"
+                      alt="Project Thumbnail"
                     />
                   </div>
                   <div className="s-left bottom-left-mobile-readjust">
-                    <h3 className="xs-bottom bold ">Gather</h3>
+                    {/* <h3 className="xs-bottom bold ">Flickr Design System</h3> */}
                     <p className="xs-bottom">
-                      An app that lets you share the aux.
+                      Thanks for making it this far! Be on the lookout for new
+                      projects coming soon.
                     </p>
                     <Link
-                      to="/projects/gather"
+                      to="/"
                       className="button black project-work-button project-fake-white"
                     >
-                      View Project
+                      Back home
                     </Link>
                   </div>
                 </div>

@@ -20,7 +20,7 @@ class Salesforce extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"two"}>
               <scrollbutton className="pagination-visible">
-                1. Restructing the Content
+                1. Restructing The Content
               </scrollbutton>
             </WorkButton>
           </li>
@@ -34,7 +34,7 @@ class Salesforce extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"four"}>
               <scrollbutton className="pagination-visible">
-                3. Applying the Lightning Design System
+                3. Applying The Lightning Design System
               </scrollbutton>
             </WorkButton>
           </li>
@@ -64,8 +64,8 @@ class Salesforce extends Component {
         </div>
 
         <div className="project-header">
-          <div className="flex center vertical salesforce-blue">
-            <div className="fit-parent">
+          <div className="flex center vertical salesforce-banner-blue">
+            <div className="xl-top l-bottom m-pad-around">
               <img
                 src={require("../assets/img/images/Salesforce/banner.png")}
                 style={{ width: "100%" }}
@@ -208,7 +208,7 @@ class Salesforce extends Component {
             style={{ marginBottom: "0px" }}
           >
             <h4 className="col-10 centered m-bottom">
-              Evaluating the current schema
+              Evaluating The Current Schema
             </h4>
             <div className="scroll-container col-10 centered ">
               <img
@@ -270,7 +270,7 @@ class Salesforce extends Component {
             className="project-body xl-top gather-img-bottom-pad"
             style={{ marginBottom: "0px" }}
           >
-            <h4 className="col-8 centered m-bottom">Creating the Funnels</h4>
+            <h4 className="col-8 centered m-bottom">Creating The Funnels</h4>
             <div className="scroll-container col-8 centered ">
               <img
                 className="fit-width"
@@ -710,26 +710,25 @@ class Salesforce extends Component {
             </div>
             <div className="project-fake-white half flex">
               <div className="bottom-width-right xl-left">
-                <h3 className="regular super-top">You've reached the end!</h3>
+                <h3 className="regular super-top">Next Project</h3>
                 <div className="flex m-top xl-bottom">
-                  <div className="new-pink col-6 flex vertical center s-pad-around card-min-width">
+                  <div className="uber-blue col-6 flex vertical center s-pad-around card-min-width">
                     <img
-                      src={require("../assets/img/thumbnails/new-project.png")}
+                      src={require("../assets/img/thumbnails/uber_home.png")}
                       style={{ width: "100%" }}
                       alt="Project Thumbnail"
                     />
                   </div>
                   <div className="s-left bottom-left-mobile-readjust">
-                    {/* <h3 className="xs-bottom bold ">Flickr Design System</h3> */}
+                    <h3 className="xs-bottom bold ">Uber</h3>
                     <p className="xs-bottom">
-                      Thanks for making it this far! Be on the lookout for new
-                      projects coming soon.
+                      Creating an enjoyable ride experience.
                     </p>
                     <Link
-                      to="/"
+                      to="/projects/uber"
                       className="button black project-work-button project-fake-white"
                     >
-                      Back home
+                      View Project
                     </Link>
                   </div>
                 </div>

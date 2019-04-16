@@ -5,7 +5,6 @@ import Scroll from "react-scroll";
 import EmailButton from "../Components/EmailButton";
 import Particles from "../Components/Particles";
 import WorkButton from "../Components/WorkButton";
-import Fade from "react-reveal/Fade";
 var Element = Scroll.Element;
 
 class Uber extends Component {
@@ -75,21 +74,21 @@ class Uber extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"one"}>
               <scrollbutton className="pagination-visible">
-                Case study
+                Case Study
               </scrollbutton>
             </WorkButton>
           </li>
           <li className="pagination-visible">
             <WorkButton elementName={"two"}>
               <scrollbutton className="pagination-visible">
-                Defining the problem
+                Defining The Problem
               </scrollbutton>
             </WorkButton>
           </li>
           <li className="pagination-visible">
             <WorkButton elementName={"three"}>
               <scrollbutton className="pagination-visible">
-                The proposal
+                The Proposal
               </scrollbutton>
             </WorkButton>
           </li>
@@ -106,14 +105,14 @@ class Uber extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"six"}>
               <scrollbutton className="pagination-visible">
-                Data &amp; recommendations
+                Data &amp; Recommendations
               </scrollbutton>
             </WorkButton>
           </li>
           <li className="pagination-visible">
             <WorkButton elementName={"seven"}>
               <scrollbutton className="pagination-visible">
-                Moving forward
+                Moving Forward
               </scrollbutton>
             </WorkButton>
           </li>
@@ -121,12 +120,10 @@ class Uber extends Component {
 
         <div className="project-title vertical">
           <div className="col-6 xm-top mobile-xm-top adjust-title-width">
-            <Fade left>
-              <h2 className="xm-bottom adjust-left">
-                Uber –&nbsp; <br />{" "}
-                <span className="light">Discovery in motion.</span>
-              </h2>
-            </Fade>
+            <h2 className="xm-bottom adjust-left">
+              Uber –&nbsp; <br />{" "}
+              <span className="light">Discovery in motion.</span>
+            </h2>
           </div>
         </div>
 
@@ -206,7 +203,7 @@ class Uber extends Component {
             <div className="scroll-container">
               <Element name="one" className="scroll-element" />
             </div>
-            <h2 className="col-6 xm-top m-bottom centered">Case study: Uber</h2>
+            <h2 className="col-6 xm-top m-bottom centered">Case Study: Uber</h2>
             <p className="col-6 article-font centered s-bottom">
               As an avid fan and frequent user of Uber, I often found it
               challenging to stay connected during the ride. Not the connection
@@ -260,7 +257,7 @@ class Uber extends Component {
                 <Element name="two" className="scroll-element" />
               </div>
               <h2 className="col-6 l-top m-bottom centered">
-                Defining the problem
+                Defining The Problem
               </h2>
               <p className="col-6 article-font centered s-bottom">
                 Before I dove into the chunk of the design process, I declared
@@ -288,7 +285,7 @@ class Uber extends Component {
                   initial product concepts.
                 </li>
               </ul>
-              <h3 className="col-6 m-top ss-bottom centered">User research</h3>
+              <h3 className="col-6 m-top ss-bottom centered">User Research</h3>
               <p className="col-6 centered article-font s-bottom">
                 In order to assess the distribution of the app space, I first
                 had to take a count of the most popular platforms in order to
@@ -375,7 +372,7 @@ class Uber extends Component {
 
             <div className="user-interviews">
               <h3 className="col-6 m-top ss-bottom centered">
-                User interviews
+                User Interviews
               </h3>
               <p className="col-6 centered article-font s-bottom">
                 After finishing my initial surveying, I set out to conduct
@@ -464,7 +461,7 @@ class Uber extends Component {
             </div>
             <div className="user-architecture">
               <h3 className="col-6 m-top ss-bottom centered">
-                Current architecture
+                Current Architecture
               </h3>
               <p className="col-6 centered article-font l-bottom">
                 After completing all my people research, I performed a content
@@ -494,7 +491,7 @@ class Uber extends Component {
                 <Element name="three" className="scroll-element" />
               </div>
               <h2 className="col-6 xl-top ss-bottom centered white super-top ">
-                The proposal
+                The Proposal
               </h2>
               <p className="col-6 article-font centered xl-pad-bottom white l-bottom">
                 A fully integrated entertainment suite for an enjoyable,
@@ -503,7 +500,7 @@ class Uber extends Component {
             </div>
           </div>
 
-          <h3 className="col-6 l-top s-bottom centered">App lineup</h3>
+          <h3 className="col-6 l-top s-bottom centered">App Lineup</h3>
           <p className="col-6 article-font centered bottom s-bottom">
             A homage to Uber's familiar Messages screen, I relied on the
             preexisting stack layout, but with each card ordered in a non-linear
@@ -701,7 +698,7 @@ class Uber extends Component {
               <Element name="six" className="scroll-element" />
             </div>
             <h3 className="col-6 l-top m-bottom centered">
-              Data &amp; recommendations
+              Data &amp; Recommendations
             </h3>
             <p className="col-6 article-font centered xl-bottom half-black">
               One very important aspect in all of this, is keeping the rider
@@ -765,7 +762,7 @@ class Uber extends Component {
             <div className="scroll-container">
               <Element name="seven" className="scroll-element" />
             </div>
-            <h2 className="col-6 centered xm-top m-bottom">Moving forward</h2>
+            <h2 className="col-6 centered xm-top m-bottom">Moving Forward</h2>
             <p className="col-6 article-font centered m-bottom">
               As I continue to research the validities of my proposal, I need to
               perform additional usability tests to close any assumptions I may

@@ -31,8 +31,8 @@ class About extends Component {
               <i>personal</i> lens. */}
                 As a designer, I believe great products are beyond the sum of
                 their parts. They tap into personal experiences, be it the
-                uncontainable excitement before a concert opening or reliving
-                old experiences through photos.
+                uncontainable excitement before a concert opening or the
+                nostalgia of reliving memories through old photos.
               </p>
               <p className="light s-bottom">
                 {/* I currently focus on designing and developing a smart database
@@ -75,10 +75,13 @@ class About extends Component {
                 table.
               </p>
               <p className="light s-bottom">
-                I developed this website after teaching myself React over the
+                {/* I developed this website after teaching myself React over the
                 course of one summer, and hosted it on AWS. If you're a designer
                 looking to learn more about the development space, feel free to
-                contact me!
+                contact me! */}
+                In my spare time I enjoy taking photos with a film camera,
+                learning new things on Medium, and keeping up to date with
+                contemporary fashion trends.
                 {/* I am
               also currently looking for full-time product design &amp; ux
               design opportunties in the San Francisco Bay Area. */}

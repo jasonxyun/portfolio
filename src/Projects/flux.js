@@ -42,14 +42,14 @@ class Flux extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"five"}>
               <scrollbutton className="pagination-visible">
-                Shape shifter
+                Shape Shifter
               </scrollbutton>
             </WorkButton>
           </li>
           <li className="pagination-visible">
             <WorkButton elementName={"six"}>
               <scrollbutton className="pagination-visible">
-                Final thoughts
+                Final Thoughts
               </scrollbutton>
             </WorkButton>
           </li>
@@ -79,11 +79,10 @@ class Flux extends Component {
                   From the very start to the finish of the design process,
                   animations are primarily introduced towards the end of the
                   project. Needless to say, it does not take away from its
-                  significance. They are the a crucial chapters of an interface
-                  that determines its overall
-                  <i>look</i> and <i>feel</i>. In this project, I dive into a
-                  handful of the popular animations that designers utilize in
-                  the industry today.
+                  significance. They are the crucial chapters of an interface
+                  that determines its overall <i>look</i> and <i>feel</i>. In
+                  this project, I dive into a handful of the popular animations
+                  that designers utilize in the industry today.
                 </p>
               </div>
             </div>
@@ -259,7 +258,7 @@ class Flux extends Component {
             <div className="scroll-container">
               <Element name="five" className="scroll-element" />
             </div>
-            <h2 className="l-top m-bottom">Shape shifter</h2>
+            <h2 className="l-top m-bottom">Shape Shifter</h2>
             <div className="s-bottom centered flux-gif">
               <img
                 src={require("../assets/img/images/Flux/shape-shifter.gif")}
@@ -296,7 +295,7 @@ class Flux extends Component {
             <div className="scroll-container">
               <Element name="six" className="scroll-element" />
             </div>
-            <h2 className=" xm-top m-bottom">Final thoughts</h2>
+            <h2 className=" xm-top m-bottom">Final Thoughts</h2>
             <p className=" article-font s-bottom">
               All in all, animations are excellent way to provide visual
               feedback for the user. When done meaningfully, they add a lot more

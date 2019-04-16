@@ -27,14 +27,14 @@ class Flux extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"three"}>
               <scrollbutton className="pagination-visible">
-                Creating the Blueprints
+                Creating The Blueprints
               </scrollbutton>
             </WorkButton>
           </li>
           <li className="pagination-visible">
             <WorkButton elementName={"four"}>
               <scrollbutton className="pagination-visible">
-                Organizing the flow
+                Organizing The flow
               </scrollbutton>
             </WorkButton>
           </li>
@@ -223,13 +223,13 @@ class Flux extends Component {
             <Element name="three" className="scroll-element" />
           </div>
           <h3 className="col-6 centered xm-top m-bottom">
-            Creating the Blueprints
+            Creating The Blueprints
           </h3>
           <div className="scroll-container">
             <Element name="four" className="scroll-element" />
           </div>
           <h4 className="col-6 centered xm-top s-bottom">
-            Organizing the flow
+            Organizing The flow
           </h4>
           <p className="col-6 centered s-bottom">
             To determine the user flow for Gather, I created a user journey of
@@ -297,8 +297,21 @@ class Flux extends Component {
             />
           </div>
           <p className="col-6 centered l-bottom">
-            I then translated my initial sketch into a wireframe mockup to
-            closely resemble what I had in mind for the final design.
+            During my ideation process, I looked to various sources of
+            inspiration for structuring my content. I emphasized the need for a
+            design that was able to highlight both the music and the occasion
+            and made the entire experience lighthearted and fun.
+          </p>
+          <div className="scroll-container col-9 centered s-bottom">
+            <img
+              className="fit-width"
+              src={require("../assets/img/images/Gather/Sketch.png")}
+              alt="Categories"
+            />
+          </div>
+          <p className="col-6 centered l-bottom">
+            I then translated my initial sketch into a wireframe mockup to lay
+            the foundations for what I had in mind in my final design.
           </p>
         </div>
 
@@ -357,6 +370,27 @@ class Flux extends Component {
             With this in mind, I created a visual aesthetic that took cues from
             that of Spotify and Apple Music. Elements such as highlight
             gradients and a dark scheme were at the forefront of the interface.
+          </p>
+
+          <h6 className="col-6 centered xm-top s-bottom">Streaming</h6>
+
+          <p
+            className="col-6 centered s-bottom"
+            style={{ textJustify: "inter-character" }}
+          >
+            <img
+              style={{ float: "right" }}
+              src={require("../assets/img/images/Gather/Plus.png")}
+              alt="Plus"
+            />
+            At the core of the app's functionality was the ability to stream and
+            add music. To reflect this importance, I chose to incorporate a
+            "universal plus sign" in any areas where it was possible to add
+            music. Whether that was browing genres, viewing the song queue, or
+            voting for songs, the plus symbol would represent the ability to
+            search and add new music. This reminds the user of the core
+            functionality but also makes for easy transitions between browsing
+            new songs and adding them to your list.
           </p>
 
           <h6 className="col-6 centered xm-top s-bottom">Social Voting</h6>
@@ -419,6 +453,27 @@ class Flux extends Component {
           </div>
         </div>
 
+        <div
+          className="bordure gather-light-blue"
+          style={{ paddingBottom: "0px" }}
+        >
+          <div
+            className=" project-body gather-img-bottom-pad"
+            style={{
+              marginBottom: "0px",
+              paddingLeft: "0px",
+              paddingRight: "0px",
+              paddingBottom: "0px"
+            }}
+          >
+            <img
+              className="fit-width"
+              src={require("../assets/img/images/Gather/iphone.png")}
+              alt="Final Design"
+            />
+          </div>
+        </div>
+
         <div className="project-body">
           <div className="scroll-container">
             <Element name="eight" className="scroll-element" />
@@ -478,7 +533,7 @@ class Flux extends Component {
             </div>
             <div className="project-fake-white half flex">
               <div className="bottom-width-right xl-left">
-                <h3 className="regular super-top">Salesforce</h3>
+                <h3 className="regular super-top">Next Project</h3>
                 <div className="flex m-top xl-bottom">
                   <div className="salesforce-blue col-6 flex vertical center s-pad-around card-min-width">
                     <img
@@ -488,7 +543,7 @@ class Flux extends Component {
                     />
                   </div>
                   <div className="s-left bottom-left-mobile-readjust">
-                    {/* <h3 className="xs-bottom bold ">Flickr Design System</h3> */}
+                    <h3 className="xs-bottom bold ">Salesforce</h3>
                     <p className="xs-bottom">
                       Redesigning the Customer Success Suite.
                     </p>

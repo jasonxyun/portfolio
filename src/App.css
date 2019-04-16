@@ -718,7 +718,7 @@ p {
 }
 
 .home-header-description strong {
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: normal;
 }
 
@@ -2212,6 +2212,16 @@ p {
   background-color: #a8b7c7;
 }
 
+.salesforce-banner-blue {
+  background: -webkit-linear-gradient(
+    top,
+    #a8b7c7,
+    #a8b7c7 73%,
+    #54698d 30%,
+    #54698d
+  );
+}
+
 .salesforce-pink {
   /* background-color: #ff90a2; */
   background-color: #fccf17;
@@ -2231,4 +2241,7 @@ p {
   text-align: center;
   padding-top: 56px;
   padding-bottom: 56px;
+}
+.gather-light-blue {
+  background-color: #bfd3ed;
 }
