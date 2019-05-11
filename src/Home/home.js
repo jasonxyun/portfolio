@@ -27,7 +27,7 @@ class Home extends Component {
                   <EmailButton>
                     <div
                       className="button home-email-button"
-                      title="Click to copy email to clipboard."
+                      title="Click to copy my email to your clipboard!"
                     >
                       Get in touch
                     </div>
@@ -37,7 +37,7 @@ class Home extends Component {
                   <WorkButton elementName={"featuredProjects"}>
                     <div
                       className="button home-work-button"
-                      title="Click to view my projects."
+                      title="Click to view my projects!"
                     >
                       Explore my projects
                     </div>

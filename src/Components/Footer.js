@@ -38,7 +38,7 @@ class Footer extends Component {
               <EmailButton color={"white"}>
                 <div
                   className="button footer-email-button"
-                  title="Click to copy email to clipboard."
+                  title="Click to copy my email to your clipboard!"
                 >
                   Get in touch
                 </div>
@@ -48,7 +48,7 @@ class Footer extends Component {
               <Link to="/about">
                 <div
                   className="button white footer-about-button"
-                  title="Click to view my projects."
+                  title="Click to learn more about me!"
                 >
                   About Me
                 </div>

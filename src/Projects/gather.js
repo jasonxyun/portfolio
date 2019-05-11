@@ -20,7 +20,7 @@ class Flux extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"two"}>
               <scrollbutton className="pagination-visible">
-                User Research
+                Preliminary Research
               </scrollbutton>
             </WorkButton>
           </li>
@@ -34,7 +34,7 @@ class Flux extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"four"}>
               <scrollbutton className="pagination-visible">
-                Organizing The flow
+                Identifying Utility
               </scrollbutton>
             </WorkButton>
           </li>
@@ -48,7 +48,7 @@ class Flux extends Component {
           <li className="pagination-visible">
             <WorkButton elementName={"six"}>
               <scrollbutton className="pagination-visible">
-                Testing
+                Execution
               </scrollbutton>
             </WorkButton>
           </li>
@@ -182,7 +182,9 @@ class Flux extends Component {
           <div className="scroll-container">
             <Element name="two" className="scroll-element" />
           </div>
-          <h3 className="col-6 centered xm-top m-bottom">User Research</h3>
+          <h3 className="col-6 centered xm-top m-bottom">
+            Preliminary Research
+          </h3>
           <p className="col-6 centered s-bottom">
             Before setting out to design the interface, I sought out to collect
             some initial user inputs, just so that I had a working requirements
@@ -229,13 +231,13 @@ class Flux extends Component {
             <Element name="four" className="scroll-element" />
           </div>
           <h4 className="col-6 centered xm-top s-bottom">
-            Organizing The flow
+            Identifying Utility
           </h4>
           <p className="col-6 centered s-bottom">
             To determine the user flow for Gather, I created a user journey of
             the process to better get a sense of what interfaces to design for
-            it to fulfill its intended function. Out of many areas, the main
-            points boiled down to four:
+            it to fulfill its intended functions. Out of many subfunctions and
+            features, the main points boiled down to four:
           </p>
           <div className="flex tab-wrap">
             <div className="col-2-5 s-right spacing tab-spacing" />
@@ -268,23 +270,9 @@ class Flux extends Component {
             </div>
           </div>
 
-          <p className="col-6 centered">
-            Given these different tasks, I was able to create an interface that
-            reflected these functions. My goal here was to create a natural
-            experience that most people were already familiar with. By
-            incorporating album art to highlight recognizable songs and making
-            the voting process both fun and easy, I wanted the overall feel to
-            be <i>light</i> and <i>intuitive</i>.
-          </p>
-
-          <div className="scroll-container">
-            <Element name="five" className="scroll-element" />
-          </div>
-          <h4 className="col-6 centered xm-top s-bottom">Low-Fi Mockups</h4>
           <p className="col-6 centered s-bottom">
-            After gathering what I had learned, I sketched what would be the
-            first initial mockup. My initial sketch consisted of three main
-            categories to meet the needs of different utilities. These included{" "}
+            From the four points, I condensed the design into three main screens
+            that met the needs of the different utilities. These included{" "}
             <b>Search</b>, <b>Stream</b>, and <b>Profile</b>. Doing so would
             help users be able to make conscious choices based on their intended
             utility.
@@ -296,21 +284,28 @@ class Flux extends Component {
               alt="Categories"
             />
           </div>
-          <p className="col-6 centered l-bottom">
-            During my ideation process, I looked to various sources of
-            inspiration for structuring my content. I emphasized the need for a
-            design that was able to highlight both the music and the occasion
-            and made the entire experience lighthearted and fun.
-          </p>
-          <div className="scroll-container col-9 centered s-bottom">
-            <img
-              className="fit-width"
-              src={require("../assets/img/images/Gather/Sketch.png")}
-              alt="Categories"
-            />
+
+          <div className="scroll-container">
+            <Element name="five" className="scroll-element" />
           </div>
+          <h4 className="col-6 centered xm-top s-bottom">Low-Fi Mockups</h4>
+          <p className="col-6 centered s-bottom">
+            Given these different tasks, I wanted to create an interface that
+            reflected these functions. My goal here was to create a natural
+            experience that most people were already familiar with. By
+            incorporating album art to highlight recognizable songs and making
+            the voting process both fun and easy, I wanted the overall feel to
+            be <i>light</i> and <i>intuitive</i>.
+          </p>
+
+          <p className="col-6 centered s-bottom">
+            During my ideation process, I looked to various sources of
+            inspiration for structuring my content. Again, I emphasized the need
+            for a design that was able to highlight both the music and the
+            occasion and made the entire experience lighthearted and fun.
+          </p>
           <p className="col-6 centered l-bottom">
-            I then translated my initial sketch into a wireframe mockup to lay
+            I then translated my initial sketchs into a wireframe mockup to lay
             the foundations for what I had in mind in my final design.
           </p>
         </div>
@@ -334,7 +329,7 @@ class Flux extends Component {
           <div className="scroll-container">
             <Element name="six" className="scroll-element" />
           </div>
-          <h4 className="col-6 centered xm-top s-bottom">Testing</h4>
+          <h4 className="col-6 centered xm-top s-bottom">Execution</h4>
           <p className="col-6 centered s-bottom">
             Based on the mockup, I conducted a second study to hone in on how I
             wanted to iron out the kinks and details. Some questions I asked
@@ -342,11 +337,12 @@ class Flux extends Component {
           </p>
           <div className="col-6 centered m-bottom quote-border">
             <p className="quote">
-              “How do I want to create the look and feel for this product?"
-              <br />
               "What other apps in this space do this well?"
               <br />
-              "What processes best fit the needs for this product?”
+              "What elements best fit the needs for this product?”
+              <br />
+              “What sort of design language will create the look and feel I want
+              for this product?"
             </p>
           </div>
 

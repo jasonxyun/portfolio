@@ -92,6 +92,23 @@ class About extends Component {
                 <h5 className="xs-top xs-bottom">Work Experience</h5>
                 <p className="bold xxs-bottom">
                   <a
+                    href="https://www.rga.com/"
+                    className="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    R/GA
+                  </a>
+                </p>
+                <p className="light s-bottom">
+                  Experience Design Intern{" "}
+                  <span className="about-timeline gray">
+                    &sdot; Jun 2019 - Present
+                  </span>
+                </p>
+
+                <p className="bold xxs-bottom">
+                  <a
                     href="https://ced.berkeley.edu/resources/computing/"
                     className="link"
                     target="_blank"
@@ -103,7 +120,7 @@ class About extends Component {
                 <p className="light s-bottom">
                   Product Designer{" "}
                   <span className="about-timeline gray">
-                    &sdot; Nov 2016 - Present
+                    &sdot; Nov 2016 - May 2019
                   </span>
                 </p>
 
